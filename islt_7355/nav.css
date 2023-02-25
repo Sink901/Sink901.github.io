@@ -1,0 +1,11 @@
+ol li {
+    display: inline;
+    border: 5px dotted #606c38;
+    background-color: #dda15eff;
+    text-decoration: underline;
+    text-align: center;
+    width: 2500px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 0;
+    margin-left: 20px;
+    }
