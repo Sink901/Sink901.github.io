@@ -17,15 +17,27 @@ Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
 
                <link rel="stylesheet"
                href="nav.css">
+               <style>
+                p {border:0px solid white}
+               </style>
 
 </head>
 <body>
     <nav>
-        <ol>
-            <li><a href=index.html>Home</a></li>
-            <li><a href=about.html>About</a></a></li>
-            <li><a href=#projects.html>Projects</a></li>
-        </ol>
+        <ul>
+            <li class="active"><a href=index.html>Home</a></li>
+            <li><a href=about.html>About</a></li>
+            <li><a href=reflection.html>Reflection</a></li>
+            <li><a href=projects.html>Projects</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+            
+                </ul>   
+            </li>
+            <li><a href=#contact.html>Contact</a></li>
+        </ul>
     </nav>
     <header><h1>Zdena Sinkhorn's Professional Website</h1></header>
     <main>
@@ -35,6 +47,5 @@ Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
 
     </main>
 <footer>Zdena Sinkhorn <br/>zgs89t@umsystem.edu <br/>Copyright 2023 University of Missouri. All rights reserved.</footer>
-<nav></nav>
 </body>
 </html>
