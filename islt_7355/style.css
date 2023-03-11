@@ -47,4 +47,13 @@ footer {
                         font-family: 'Palatino', Georgia, serif;
                         font-size: large;
 }
-
+@media screen and (max-width:900px) { 
+    main { 
+        background-color:lightslategray; 
+    } 
+}
+@media screen and (max-width:350px) { 
+    main { 
+        background-color:blueviolet; 
+    } 
+} 

@@ -53,3 +53,50 @@ nav>ul>li:hover>ul{
         padding: 25px 20px;
         
     }
+    @media only screen and (max-width: 640px) {
+        header {
+            position: relative;
+            height: 60px;
+            display: block;
+            background-color: #758053;
+            width: 100%;        
+    
+        }
+        #hamburger {
+            display: inline-block;
+            padding-left: 20px;
+            width: 26px;
+            float:left;
+            font-size: 3em;
+        }
+        nav ul, nav:active ul {
+            display: none;
+            position: absolute;
+            padding: 20px 20px 20px 0px;
+            top: 20px;
+                }
+        nav:hover ul {
+            display: block;
+        }
+            nav:hover #mobileHide {
+            display: none;
+        }
+        nav li {
+            text-align: center;
+        }
+        nav>ul li {
+        text-align: left;
+        color: rgb(245, 231, 215);
+        float: left;
+    }
+    nav a {
+        display: inline-block;
+        padding: 10px 0px 10px 20px;
+        width: 240px;
+        margin-bottom: 2px;
+    }
+    nav .lastMobile {border-bottom: 2px solid black;}
+        nav ul li ul {
+            display:none;
+        }
+    }
