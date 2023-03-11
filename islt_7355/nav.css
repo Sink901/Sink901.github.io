@@ -58,15 +58,14 @@ nav>ul>li:hover>ul{
             position: relative;
             height: 60px;
             display: block;
-            background-color: #758053;
+            background-color:tan;
             width: 100%;        
     
         }
         #hamburger {
             display: inline-block;
-            padding-left: 20px;
-            width: 26px;
-            float:left;
+            padding-left: 25px;
+            width: 30px;
             font-size: 3em;
         }
         nav ul, nav:active ul {
