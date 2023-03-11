@@ -11,13 +11,40 @@ footer {
         align-items: left;
     background-color: blanchedalmond;
    }
-   div {
-    border: 0px solid white;
-    position: relative;
-    top: 20px;
-    margin-bottom: 200px;
-    width: 100%;
-    border:0px solid white;
-    font-size: large;
-    font-family:'Palatino';
+   .container {
+    display:grid;
+    grid-template-areas:
+        "Heading Heading Heading Heading Heading"
+        "Heading1 Heading1 Heading1 Heading1 Heading1"
+        "Main . . . Overivew"
+        "Resume . . . ."
+    }
+.Heading { 
+    grid-area: Heading; 
 }
+.Heading1 { 
+    grid-area: Heading1; 
+}
+  .Main { 
+    grid-area: Main; 
+}
+  .Overview { 
+    grid-area: Overview; 
+}
+  .Resume { 
+    grid-area: Resume; 
+    padding-top: 20px;
+    padding-left: 10px;
+    border: 5px solid #000000;
+                    background:#dda15eff;
+                    margin-top:15px;
+                    margin-bottom:50px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                    padding-right: 25px;
+                    width: 50px;
+                        font-family: 'Palatino', Georgia, serif;
+                        font-size: large;
+}
+

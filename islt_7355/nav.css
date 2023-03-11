@@ -41,6 +41,7 @@ nav ul {
         position: absolute;
         top:100%;
         background-color:rgb(150, 160, 159);
+        white-space:normal;
         
     }
 nav>ul>li:hover>ul{
