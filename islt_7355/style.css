@@ -22,7 +22,7 @@ footer {
     justify-content: space-around;
     text-align:center;
     flex-wrap: wrap;
-    height: calc(100vh - 100px);
+    width: 100%;
   }
   .container>div {
     position: fixed;
