@@ -1,9 +1,16 @@
+.active a:link {
+    background-color: rgb(167, 163, 163);
+}
+#hamburger {
+    display: none;
+}
  ul{
         display: flex;
         flex-direction: row;
         list-style-type: none;
         padding: 0;
         margin: 0;
+        position:absolute;
  }
  li{
         width: 150px;
@@ -42,7 +49,8 @@ nav ul {
         top:100%;
         background-color:rgb(150, 160, 159);
         white-space:normal;
-        
+        padding: 10px; 
+        border-radius: 0px 0px 4px 4px;
     }
 nav>ul>li:hover>ul{
     display:block;
@@ -56,18 +64,24 @@ nav>ul>li:hover>ul{
     @media only screen and (max-width: 640px) {
         header {
             position: relative;
+            top: auto;
             height: 60px;
             display: block;
             background-color:tan;
             width: 100%;        
-    
+            margin-bottom: 0px !important;
+        
         }
+        .navbar-collapse {
+            max-height: none;
+        }
+
         #hamburger {
             display: inline-block;
-            padding-left: 25px;
-            width: 30px;
-            font-size: 3em;
-        }
+            width: 26px;        
+                  
+                font-size: 2em;
+            }
         nav ul, nav:active ul {
             display: none;
             position: absolute;
@@ -75,23 +89,31 @@ nav>ul>li:hover>ul{
             top: 20px;
                 }
         nav:hover ul {
-            display: block;
+            display: inline-block;
+            background-color: #ce985b;
+            padding: 5px;
+            border-right: 0px;
         }
+
             nav:hover #mobileHide {
             display: none;
         }
         nav li {
             text-align: center;
+            padding: 0;
+            margin: 0;
         }
         nav>ul li {
-        text-align: left;
+        text-align: center;
         color: rgb(245, 231, 215);
         float: left;
     }
     nav a {
         display: inline-block;
+        border-top: none;    
+        border-bottom: none; 
         padding: 10px 0px 10px 20px;
-        width: 240px;
+        width: 150px;
         margin-bottom: 2px;
     }
     nav .lastMobile {border-bottom: 2px solid black;}

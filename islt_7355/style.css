@@ -1,40 +1,41 @@
 h1 {color: #606c38;}
+body{
+    width: 100%
+}
 footer {
     position: fixed;
     bottom:0;
     left:0;
     right:0;
     width: 100%;
-    height: 90px;
+    height: 70px;
     display: flex;
     justify-content:left;
         align-items: left;
     background-color: blanchedalmond;
    }
-   .container {
-    display:grid;
-    grid-template-areas:
-        "Heading Heading Heading Heading Heading"
-        "Heading1 Heading1 Heading1 Heading1 Heading1"
-        "Main . . . Overivew"
-        "Resume . . . ."
-    }
-.Heading { 
-    grid-area: Heading; 
-}
-.Heading1 { 
-    grid-area: Heading1; 
-}
-  .Main { 
-    grid-area: Main; 
-}
-  .Overview { 
-    grid-area: Overview; 
-}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    justify-content: space-around;
+    text-align:center;
+    flex-wrap: wrap;
+    height: calc(100vh - 100px);
+  }
+  .container>div {
+    position: fixed;
+    text-align:center;
+    margin: 10px;
+    min-width: 0;
+    white-space: normal;
+    justify-content: space-around;
+  }
   .Resume { 
-    grid-area: Resume; 
     padding-top: 20px;
     padding-left: 10px;
+    padding-bottom: 170px;
     border: 5px solid #000000;
                     background:#dda15eff;
                     margin-top:15px;
@@ -47,13 +48,19 @@ footer {
                         font-family: 'Palatino', Georgia, serif;
                         font-size: large;
 }
-@media screen and (max-width:900px) { 
+.Education
+{
+    text-align: center;
+}
+@media screen and (min-width:601px) { 
     main { 
-        background-color:lightslategray; 
+        background-color: none; 
+        font-size: 20pt;
     } 
 }
-@media screen and (max-width:350px) { 
+@media screen and (max-width:600px) { 
     main { 
-        background-color:blueviolet; 
+        background-color: none; 
+        font-size: 16pt;
     } 
 } 
