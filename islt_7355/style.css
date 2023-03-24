@@ -1,0 +1,88 @@
+@font-face { 
+    font-family: PTSerif-Regular;
+    src: url("sink901.github.io/islt_7355/PT_Serif(1)/PTSerif-Regular.ttf");
+    font-family: PTSerif-Italic;
+    src: url("sink901.github.io/islt_7355/PT_Serif(1)/PTSerif-Italic.ttf")
+    }
+h1 {color: #606c38;}
+body{
+    width: 100%
+}
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content:left;
+        align-items: left;
+    background-color: blanchedalmond;
+   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    justify-content: space-around;
+    text-align:center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .container>div {
+    position: fixed;
+    text-align:center;
+    margin: 10px;
+    min-width: 0;
+    white-space: normal;
+    justify-content: space-around;
+  }
+  .Resume { 
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 170px;
+    border: 5px solid #000000;
+                    background:#dda15eff;
+                    margin-top:15px;
+                    margin-bottom:50px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                    padding-right: 25px;
+                    width: 50px;
+                        font-family: 'Palatino', Georgia, serif;
+                        font-size: large;
+}
+.Education
+{
+    text-align: center;
+    font-family: 'PTSerif-Regular';
+}
+.blockquote
+{
+    font-family: 'PTSerif-Italic';
+}
+@media screen and (min-width:601px) { 
+    main { 
+        background-color: none; 
+        font-size: 20pt;
+    } 
+}
+@media screen and (max-width:600px) { 
+    main { 
+        background-color: none; 
+        font-size: 16pt;
+    } 
+} 
+@media print {
+    *{
+        background: transparent !important;
+        color: #000 !important;
+    }
+    .nav,
+    .Resume
+    {
+        display: none;
+    }
+    }
