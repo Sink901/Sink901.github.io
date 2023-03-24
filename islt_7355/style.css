@@ -1,8 +1,18 @@
 @font-face { 
-    font-family: PTSerif-Regular;
-    src: url("sink901.github.io/islt_7355/PT_Serif(1)/PTSerif-Regular.ttf");
-    font-family: PTSerif-Italic;
-    src: url("sink901.github.io/islt_7355/PT_Serif(1)/PTSerif-Italic.ttf")
+    font-family:"apolline";
+    src: url("https://use.typekit.net/af/b4c6df/000000000000000077359919/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
+}
+@font-face {
+    font-family:"apollineitalic";
+    src: url("https://use.typekit.net/af/64c8fb/000000000000000077359ece/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+    font-display:auto;
+    font-style:italic;
+    font-weight:700;
+    font-stretch:normal;
     }
 h1 {color: #606c38;}
 body{
@@ -38,8 +48,26 @@ footer {
     white-space: normal;
     justify-content: space-around;
   }
+  .Education
+{
+    display:block;
+    text-align: center;
+    font-family: 'apolline';
+    
+}
+ul.a{
+    margin:auto;
+    list-style-type:none;
+}
+ul.a>li{
+    display: block;
+    width: 100%;
+    padding: 150px;
+    text-align: left;
+}
   .Resume { 
-    padding-top: 20px;
+    display: block;
+    padding-top: 120px;
     padding-left: 10px;
     padding-bottom: 170px;
     border: 5px solid #000000;
@@ -54,14 +82,10 @@ footer {
                         font-family: 'Palatino', Georgia, serif;
                         font-size: large;
 }
-.Education
+
+blockquote
 {
-    text-align: center;
-    font-family: 'PTSerif-Regular';
-}
-.blockquote
-{
-    font-family: 'PTSerif-Italic';
+    font-family: 'apollineitalic';
 }
 @media screen and (min-width:601px) { 
     main { 
@@ -84,5 +108,8 @@ footer {
     .Resume
     {
         display: none;
+    }
+    @page{
+        margin: 1in;
     }
     }
