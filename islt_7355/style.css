@@ -1,4 +1,21 @@
+@import url("https://p.typekit.net/p.css?s=1&k=xxy0cql&ht=tk&f=1864.1865.1866.1867.11447.11449.11451.11453&a=138115143&app=typekit&e=css");
 
+@font-face { 
+    font-family:"apolline";
+    src: url("https://use.typekit.net/af/b4c6df/000000000000000077359919/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
+}
+@font-face {
+    font-family:"apollineitalic";
+    src: url("https://use.typekit.net/af/64c8fb/000000000000000077359ece/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+    font-display:auto;
+    font-style:italic;
+    font-weight:700;
+    font-stretch:normal;
+    }
 h1 {color: #606c38;}
 body{
     width: 100%
