@@ -97,7 +97,7 @@ ul.a>li{
     transition: width 0.3s linear 0s;
     z-index:10;
 }
-.pic:hover + .picbig{
+.pic:hover+.picbig{
     width: 200px;
 }
 blockquote
