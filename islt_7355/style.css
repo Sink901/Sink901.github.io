@@ -78,6 +78,7 @@ footer {
     text-align:center;
     flex-wrap: wrap;
     width: 100%;
+    background-color:rgba(228, 208, 170, 0.8);
   }
   .container>div {
     position: fixed;
