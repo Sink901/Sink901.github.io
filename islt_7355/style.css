@@ -133,6 +133,13 @@ ul.a>li{
     height: 60px;
     padding-left: 20px;
 }
+.pic3{
+    position: static;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+
+}
 .pic:hover{
     transform: scale(1.5);
 }
