@@ -130,6 +130,7 @@ ul.a>li{
 }
 .pic2{
     height: 60px;
+    padding-left: 20px;
 }
 .pic:hover{
     transform: scale(1.5);
