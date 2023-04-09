@@ -128,7 +128,9 @@ ul.a>li{
     height:25px;
     transition: transform .2s;
 }
-
+.pic2{
+    height: 60px;
+}
 .pic:hover{
     transform: scale(1.5);
 }
