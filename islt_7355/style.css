@@ -178,6 +178,27 @@ blockquote
 {
     font-family: 'apollineitalic';
 }
+form{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    background-color: rgba(165, 135, 89, 0.8);
+    padding: 30px;
+    position: relative;
+}
+input {
+    width: 10%;
+    height: 40px
+}
+textarea{
+    width:50%
+}
+button{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(90, 65, 36);
+    color:antiquewhite;
+}
 @media screen and (min-width:601px) { 
     main { 
         background-color: none; 
@@ -196,6 +217,12 @@ blockquote
             width: 50%;
             margin-left: 25%;
             margin-right:25%;
+        }
+        form{
+            width: 50%;
+            margin-left: 25%;
+            margin-right:25%;
+            font-size: 20px; 
         }
     }  
 @media print {
