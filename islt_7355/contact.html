@@ -7,7 +7,7 @@ Use: Home page for professional website
 Author: Zdena Sinkhorn
 School/Term: University of Missouri, Spring 2023
 Developed: Feb. 2, 2023
-Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
+Tested: April 23rd, 2023; Passed on Edge, Firefox and Chrome browsers
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,34 +19,40 @@ href="style.css">
 <link rel="shortcut icon" type="image/png" href="/islt_7355/images/favicon-32x32.png">
 </head>
 <body>
-    <nav>
-        <label id="hamburger">☰</label>
-        <ul>
-            <li class="active"><a href=index.html>Home</a></li>
-            <li><a href=about.html>About</a></li>
-            <li><a href=reflection.html>Reflection</a></li>
-            <li><a href=projects.html>Projects</a>
-            <ul>
-                <li><a href="/islt_7355/projects.htmlProject1">Project 1</a></li>
-                <li><a href="/islt_7355/projects.htmlProject2">Project 2</a></li>
-                <li><a href="/islt_7355/projects.htmlProject3">Project 3</a></li>
-                    </ul>   
+    <nav class="navbar">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li class="active"><a href=index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=reflection.html>Reflection</a></li>
+                    <li class="projects"><a href=projects.html>Projects</a>
+                     <ul class="dropdown">
+                        <li><a href="/islt_7355/projects.htmlProject1">North Carolina</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject2">Estes Park</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject3">College of Wooster</a></li>
+                    </ul>
                 </li>
-            <li><a href=/contact.html>Contact</a></li>
-                </ul>
-    </nav>
+                <li><a href=contact.html>Contact</a></li>  
+            </div>
+        </ul>
+        </nav>
     <main>
+        <div class="conatiner5">
 <form action="mailto:zganne19@gmail.com?Subject=Professional%20Website%20Contact" method="post" enctype="text/plain">
     <label for="name">First Name</label>
-    <input type="text" id="fname" name="FirstName" required />
+    <input type="text" id="fname" name="FirstName" placeholder="First Name" required />
     <label for="name">Last Name</label>
-    <input type="text" id="lname" name="LastName" required />
+    <input type="text" id="lname" name="LastName" placeholder="Last Name" required />
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" required />
+    <input type="email" id="email" name="email" placeholder="Email" required />
     <label for="message">Your Message</label>
-    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type message here..." ></textarea>
     <button type="submit">Send</button>
   </form> 
-    <footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu <br/>Copyright 2023 University of Missouri. All rights reserved.</footer>
+</div>
+  </main>
+    <footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu Copyright 2023 University of Missouri. All rights reserved.</footer>
 </body>
 </html>

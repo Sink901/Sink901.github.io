@@ -6,7 +6,7 @@ Use: To inform users about the author of the webpage
 Author: Zdena Sinkhorn
 School/Term: University of Missouri, Spring 2023
 Developed: Feb. 2, 2023
-Tested:  Feb. 2, 2023; Passed on Edge and Chrome browsers.-->
+Tested: April 23rd, 2023; Passed on Edge, Firefox and Chrome browsers-->
                <meta charset="utf-8">
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>About Me</title>
@@ -39,27 +39,30 @@ Tested:  Feb. 2, 2023; Passed on Edge and Chrome browsers.-->
 
             </head>
 <body>
-    <nav>
-        <label id="hamburger">☰</label>
-        <ul>
-            <li class="active"><a href=index.html>Home</a></li>
-            <li><a href=about.html>About</a></li>
-            <li><a href=reflection.html>Reflection</a></li>
-            <li><a href=projects.html>Projects</a>
-            <ul>
-                <li><a href="/islt_7355/projects.htmlProject1">Project 1</a></li>
-                <li><a href="/islt_7355/projects.htmlProject2">Project 2</a></li>
-                <li><a href="/islt_7355/projects.htmlProject3">Project 3</a></li>
-                    </ul>   
+    <nav class="navbar">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li class="active"><a href=index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=reflection.html>Reflection</a></li>
+                    <li class="projects"><a href=projects.html>Projects</a>
+                     <ul class="dropdown">
+                        <li><a href="/islt_7355/projects.htmlProject1">North Carolina</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject2">Estes Park</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject3">College of Wooster</a></li>
+                    </ul>
                 </li>
-            <li><a href=/contact.html>Contact</a></li>
-                </ul>
-    </nav>
+                <li><a href=contact.html>Contact</a></li>  
+            </div>
+        </ul>
+        </nav>
     <main>
 <main>
     <div class="container">
         
-          <header><h1><u>About Me</u></h1></header>
+          <header><h1 class="h1"><u>About Me</u></h1></header>
           <img class="pic3" src="/islt_7355/images/self.jpg">
    <br/><h2>Introduction</h2>
    
@@ -69,21 +72,22 @@ Tested:  Feb. 2, 2023; Passed on Edge and Chrome browsers.-->
             "If humankind can find a way to map the human genome and travel in space, devising something close to a universal digital public library shouldn’t be a problem."
                 -Peter Singer, <em>A Universal Library</em>
             </blockquote>
+        </div>
+            <div class="container4">
                    <div class="Education">
                 <h2>Education Overview</h2></div>
-                  <div class="Education"> <ul class="a">
+                  <ul class="a">
                     <li>MLIS at the University of Missouri with a Speciality in Archival Studies; Expected Graduation: May 2024</li>
                     <li>Bachelors of Arts in History with a Minor in Philosophy from the College of Wooster, Class of 2022</li>
                 </ul>
-                </div>
+                <video class="video" controls>
+                    <source src="/islt_7355/video/ZSResume.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                <div class="Resume"><a href ="/islt_7355/docs/resume.pdf">Resume</a></div>
                 
-                <div class="Resume"><a href ="sink901.github.io/islt_7355/docs/resume.pdf">Resume</a></div>
-                <video class="video" width="360" height="280" controls>
-                        <source src="/islt_7355/video/ZSResume.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
                                 </main>
-            <footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu <br/>Copyright 2023 University of Missouri. All rights reserved.</footer>
+            <footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu Copyright 2023 University of Missouri. All rights reserved.</footer>
 </div>
 
 </body>

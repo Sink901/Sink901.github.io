@@ -7,11 +7,11 @@ Use: Page for outlined prjects
 Author: Zdena Sinkhorn
 School/Term: University of Missouri, Spring 2023
 Developed: Jan. 31, 2023
-Tested: Jan. 31, 2023; Passed on Edge and Chrome browsers
+Tested: April 23rd, 2023; Passed on Edge, Firefox and Chrome browsers
 -->
                <meta charset="utf-8">
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <title>Zdena Sinkhorn Projects</title>
+               <title>Zdena Sinkhorn Work Experiences</title>
                <link rel="stylesheet"
                href="nav.css">
                <link rel="stylesheet"
@@ -19,26 +19,31 @@ Tested: Jan. 31, 2023; Passed on Edge and Chrome browsers
                <link rel="shortcut icon" type="image/png" href="/islt_7355/images/favicon-32x32.png">
 </head>
 <body>
-    <nav>
-        <label id="hamburger">☰</label>
-        <ul>
-            <li class="active"><a href=index.html>Home</a></li>
-            <li><a href=about.html>About</a></li>
-            <li><a href=reflection.html>Reflection</a></li>
-            <li><a href=projects.html>Projects</a>
-            <ul>
-                <li><a href="/islt_7355/projects.htmlProject1">Project 1</a></li>
-                <li><a href="/islt_7355/projects.htmlProject2">Project 2</a></li>
-                <li><a href="/islt_7355/projects.htmlProject3">Project 3</a></li>
-                    </ul>   
+    <nav class="navbar">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li class="active"><a href=index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=reflection.html>Reflection</a></li>
+                    <li class="projects"><a href=projects.html>Projects</a>
+                     <ul class="dropdown">
+                        <li><a href="/islt_7355/projects.htmlProject1">North Carolina</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject2">Estes Park</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject3">College of Wooster</a></li>
+                    </ul>
                 </li>
-            <li><a href=/contact.html>Contact</a></li>
-                </ul>
-    </nav>
+                <li><a href=contact.html>Contact</a></li>  
+            </div>
+        </ul>
+        </nav>
     <main>
+        <div class="container">
         <figcaption>
             <h2 class="ProjectHead"><b>Selected Work Experiences</b></h2>
         </figcaption>
+    </div>
         <table class="Jtable">
             <tr>
                 <th>Job</th>
@@ -83,6 +88,6 @@ Tested: Jan. 31, 2023; Passed on Edge and Chrome browsers
     </div>
     </main>
     <br/>
-    <footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu <br/>Copyright 2023 University of Missouri. All rights reserved.</footer>
+    <footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu Copyright 2023 University of Missouri. All rights reserved.</footer>
 </body>
 </html>

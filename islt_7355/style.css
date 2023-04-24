@@ -16,22 +16,31 @@
     font-weight:700;
     font-stretch:normal;
     }
-h1 {color: #606c38;}
+h1 {color: #3d281a;
+text-align: center;
+}
 body{
-    width: 100%
+    width: 100%;
+    margin: 0;
 }
 footer {
     position: fixed;
+    margin:0;
     bottom:0;
     left:0;
     right:0;
+    padding-left:10px;
+    padding-top: 15px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content:left;
         align-items: left;
     background-color: blanchedalmond;
-    background-image: url(/islt_7355/images/fbooks3.jpg)
+    background-image: url(/islt_7355/images/bg1.jpg);
+    background-repeat: no-repeat;
+    font-size: 16px !important;
+    font-family:apolline;
    }
    .container2{
     display: grid;
@@ -40,82 +49,111 @@ footer {
     background-color: rgba(165, 135, 89, 0.8);
     padding: 30px;
     position: relative;
+    font-family:apolline;
   }
   .container2 > div {
     background-color: rgba(228, 208, 170, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    font-family:apolline;
   }
   .container2 > h2 {
     background-color:#606c38;
     text-align: center;
     padding: 20px 0;
     font-size: 50px;
+    font-family:apolline;
   }
   h2 {
     background-color:#606c38;
     text-align: center;
     padding: 20px 0;
     font-size: 50px;
+    border: 15px ridge black ;
+    max-width: 95%;
+    min-width: 5%;
+    font-family:apolline;
   }
   .ProjectHead{
     grid-column-start: 1;
     grid-column-end: 3;
     color:beige;
+    background-color: #000000;
+    font-family:apolline;
   }
 .project1{
     grid-column-start: 1;
     grid-column-end: 3;
+    font-family:apolline;
 }
 .project2{
     grid-column-start: 1;
     grid-column-end: 3;
+    font-family:apolline;
 }
 .project3{
     grid-column-start: 1;
     grid-column-end: 3;
+    font-family:apolline;
 }
-  .container {
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    justify-content: space-around;
-    text-align:center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color:rgba(228, 208, 170, 0.8);
-  }
-  .container>div {
-    position: fixed;
-    text-align:center;
-    margin: 10px;
-    min-width: 0;
-    white-space: normal;
-    justify-content: space-around;
-  }
 .Jtable {
     border-collapse: collapse;
     width: 100%;
     border:5px solid;
+    font-family:apolline;
 }
 td, th{
     border: 1px solid #ddd;
     padding: 8px;
 }
 tr:nth-child(3){
-    background-color:aqua
+    background-color:rgb(219, 176, 110)
 }
 tr:nth-child(4){
-    background-color: #3c1175;
+    background-color: #096b00;
     color: white;
 }
 th{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #3c1175;
+    background-color: #096b00;
     color: white;
+}
+.container3{
+    display: flex;
+    flex-direction:column;
+    background-color: rgba(165, 135, 89, 0.8);
+    align-items: center;
+    border-style: double;
+    font-family:apolline;
+    padding-bottom: 30px;
+}
+.p1{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 15px 15px 30px 20px;
+    border: 10px inset rgba(68, 57, 41, 0.8);
+    font-family: apolline;
+}
+.h3{
+    display: block;
+    text-align: center;
+    background-color:rgba(228, 208, 170, 0.8);
+    padding: 15px 15px 20px 20px;
+}
+
+  .container {
+    display: grid;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    background-color:rgba(228, 208, 170, 0.8);
+  }
+.h1{
+    display: block;
+    text-align: center;
 }
   .Education
 {
@@ -124,34 +162,55 @@ th{
     font-family: apolline, serif;
 font-weight: 400;
 font-style: normal;
-    
+margin:0;
+grid-area: Education;
+padding: 0;
 }
 ul.a{
     margin:auto;
     list-style-type:none;
+    grid-area:ed1;
 }
 ul.a>li{
-    display: block;
-    width: 100%;
-    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
     text-align: left;
+    padding: 5px 5px 5px 5px;
+    background: rgb(38, 90, 38);
+    color:rgba(228, 208, 170, 0.8);
+    border: 10px double black;
+    margin: 0;
+}
+.container4{
+    display:grid;
+    grid-template-areas:
+    'Education Education Education'
+    'ed1 res vid';
+    background-color:rgb(179, 144, 104);
+    padding:0px 10px 35px 10px;
+    margin: 0;
+}
+video{
+grid-area: vid;
+width: 70%;
+padding: 0px 0px 10px 0px !important;
 }
   .Resume { 
-    display: block;
-    padding-top: 120px;
-    padding-left: 10px;
-    padding-bottom: 170px;
     border: 5px solid #000000;
-                    background:#dda15eff;
-                    margin-top:15px;
-                    margin-bottom:50px;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    padding-left: 15px;
-                    padding-right: 25px;
-                    width: 50px;
-                        font-family: 'Palatino', Georgia, serif;
-                        font-size: large;
+    background:rgb(34, 105, 25);
+    color:antiquewhite;
+     width: 250px;
+    height: 150px;
+    font-family: 'Palatino', Georgia, serif;
+    font-size:x-large;
+    grid-area: res;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
 }
 .pic{
     width: 25px;
@@ -163,13 +222,11 @@ ul.a>li{
     padding-left: 20px;
 }
 .pic3{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
     height: 150px;
     width: 150px;
-
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pic:hover{
     transform: scale(1.5);
@@ -177,6 +234,20 @@ ul.a>li{
 blockquote
 {
     font-family: 'apollineitalic';
+    background-color:rgb(179, 144, 104);
+    color:#3d281a;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid gray;
+}
+.container5{
+    display: flex;
+    flex-direction:column;
+    background-color: rgba(165, 135, 89, 0.8);
+    align-items: center;
+    border-style: double;
+    font-family:apolline;
+    padding-bottom: 50px;
+
 }
 form{
     display: grid;
@@ -190,6 +261,14 @@ input {
     width: 10%;
     height: 40px
 }
+input::placeholder {
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+}
+textarea::placeholder{
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+}
 textarea{
     width:50%
 }
@@ -198,31 +277,55 @@ button{
     height: 90px;
     background-color: rgb(90, 65, 36);
     color:antiquewhite;
+    margin-bottom: 50px;
 }
 @media screen and (min-width:601px) { 
     main { 
         background-color: none; 
         font-size: 20pt;
     } 
+
 }
 @media screen and (max-width:600px) { 
     main { 
         background-color: none; 
         font-size: 16pt;
     }
+    .footer{
+        width: 50%;
+        position: sticky;
+    }
         tr {
             font-size: 20px;
         }
         .Jtable {
-            width: 50%;
-            margin-left: 25%;
-            margin-right:25%;
+            overflow-x: auto;
+        display: block;
         }
         form{
             width: 50%;
             margin-left: 25%;
             margin-right:25%;
             font-size: 20px; 
+        }
+        .container4
+        { 
+            display: block;
+            width: auto;
+        } 
+        img{
+            width: 45%;
+            height: auto;
+        }
+        video{
+            width: auto;
+        }
+        .Resume{
+            width: 45%
+        }
+        .container{
+            display: block;
+            width: auto;
         }
     }  
 @media print {

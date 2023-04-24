@@ -7,7 +7,7 @@ Use: Page for reflecting upon personal experiences
 Author: Zdena Sinkhorn
 School/Term: University of Missouri, Spring 2023
 Developed: Feb. 2, 2023
-Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
+Tested: April 23rd, 2023; Passed on Edge, Firefox and Chrome browsers
 -->
                <meta charset="utf-8">
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +21,10 @@ Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
                <link rel="shortcut icon" type="image/png" href="/islt_7355/images/favicon-32x32.png">
                <style>
                 h1{
-                    border: 0px solid lightslategray;
                     position: relative;
                     width: 100%;
                     top:10px;
-                    text-align: left;
+                    text-align: center;
                 }
                 h2{
                     position: relative;
@@ -33,10 +32,8 @@ Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
                     top:10px;
                     text-align: left;
                 } 
-
-                .p1
-                {
-                    padding: 40px;
+                p{
+                    padding: 0px 10px 15px 10px;
                 }
                  
                 @media screen and (min-width:601px) { 
@@ -55,27 +52,30 @@ Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
 
 </head>
 <body>
-    <nav>
-        <label id="hamburger">☰</label>
-        <ul>
-            <li class="active"><a href=index.html>Home</a></li>
-            <li><a href=about.html>About</a></li>
-            <li><a href=reflection.html>Reflection</a></li>
-            <li><a href=projects.html>Projects</a>
-            <ul>
-                <li><a href="/islt_7355/projects.htmlProject1">Project 1</a></li>
-                <li><a href="/islt_7355/projects.htmlProject2">Project 2</a></li>
-                <li><a href="/islt_7355/projects.htmlProject3">Project 3</a></li>
-                    </ul>   
+    <nav class="navbar">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li class="active"><a href=index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=reflection.html>Reflection</a></li>
+                    <li class="projects"><a href=projects.html>Projects</a>
+                     <ul class="dropdown">
+                        <li><a href="/islt_7355/projects.htmlProject1">North Carolina</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject2">Estes Park</a></li>
+                        <li><a href="/islt_7355/projects.htmlProject3">College of Wooster</a></li>
+                    </ul>
                 </li>
-            <li><a href=/contact.html>Contact</a></li>
-                </ul>
-    </nav>
+                <li><a href=contact.html>Contact</a></li>  
+            </div>
+        </ul>
+        </nav>
     <main>
     <main class="p1">
         <div class="container">
-        <h1 class="div">Professional Reflection</h1>
-       <h2>By Zdena Sinkhorn</h2>
+        <h1>Professional Reflection</h1>
+       <h3>By Zdena Sinkhorn</h3>
        
         <p><span style="color: darkred; font-size:xxx-large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">E</span>ver since I can remember, I have had an affinity for processing and organizing information. It started when I was young with categorizing my books by color and ranking, and then evolved into categorizing my notes and documents in my later years. It was only during my freshmen year at the College of Wooster that this odd interest inspired my future career path. Working with the College’s Special Collections Department truly changed how I approach and understand organization when it relates to information. Prior to this, I had considered the way I process and organize things restricted to physical materials. But after experiencing work in an archive, I realized the principles of sorting could be applied to my professional life and to theoretical information.</p>
         <p style= "text-indent: 30px;">I took this realization and applied it to one of my favorite summer internships, my time with the North Carolina Maritime Museum. It was there that I learned more about why it is so critical to have an understanding of why it is important to sort and organize information. Without somebody there to process and store all of the artifacts, they would not contribute anything to the museum. I took this knowledge and applied it back to my work with the College, helping the collections to retain the consistency that is critical for an archive to function. By seeing what the impact of clear information organization is on real-world scenarios, I was able to develop a more nuanced approach to both information and how individuals may approach that information. My time spent working with the museum’s records showed me that not everyone approaches an object in the same way and will not consider describing it in the same manner. By developing a consistent standard for processing information, it becomes easier to retain the necessary information and dispense with the information that is not needed.</p>
@@ -83,7 +83,8 @@ Tested: Feb. 2, 2023; Passed on Edge and Chrome browsers
         <p style= "text-indent: 30px;">While having a permanent position in an archive, museum, or data facility is still a way off for me, I have found fulfillment in contract and internship work. My range of different positions has given me a breadth of insight into the job field. I plan to finish my master’s degree and then pursue a temporary position with the National Archives and Records Administration. I hope to attain a full-time position as the archivist of a bank or local library branch, as I find those specialties to be particularly fulfilling. It is satisfying to know that what began as an odd childhood interest has now bloomed into a full career path. Not only that, but it is a path that I have already made a good amount of progress on. I plan to continue to pursue my passion for archiving and books through the competition of my graduate degree before pursuing a full-time position with an institution. I am happy with the work I have done so far and I look forward to what adventures await me in the future.</p>
     
 </main>
-<footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu <br/>Copyright 2023 University of Missouri. All rights reserved.</footer>
+<footer>Zdena Sinkhorn <br/><img class="pic" src="/islt_7355/images/phone.png"> 1+720-867-5309 <br/><img class="pic" src="/islt_7355/images/mail.png"> zgs89t@umsystem.edu 
+    Copyright 2023 University of Missouri. All rights reserved.</footer>
 </div>
 </body>
 </html>
