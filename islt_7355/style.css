@@ -282,14 +282,12 @@ button{
 }
 @media screen and (min-width:601px) { 
     main { 
-        background-color: none; 
         font-size: 20pt;
     } 
 
 }
 @media screen and (max-width:600px) { 
     main { 
-        background-color: none; 
         font-size: 16pt;
     }
     .footer{
