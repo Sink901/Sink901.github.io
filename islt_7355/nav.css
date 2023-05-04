@@ -51,7 +51,7 @@
     list-style-type: none;
     }
     .dropdown li + li {
-    margin-top: 10px;
+    margin-top: 20px;
     }
     
     .dropdown li {
@@ -111,4 +111,10 @@ input[type=checkbox] {
     .dropdown li:hover {
         background-color: #758053;
     }
-    }
+    .projects:hover{
+        left: 50%;
+        top: 30px;
+        transform: translateX(25%);
+        }
+            
+}
