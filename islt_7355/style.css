@@ -76,6 +76,16 @@ footer {
     min-width: 5%;
     font-family:apolline;
   }
+  .p6{
+        background-color:#606c38;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    border: 15px ridge black ;
+    max-width: 95%;
+    min-width: 5%;
+    font-family:apolline;
+  }
   .ProjectHead{
     grid-column-start: 1;
     grid-column-end: 3;
